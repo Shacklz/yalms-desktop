@@ -1,0 +1,26 @@
+<mat-card>
+    <mat-card-title>
+        Add a book:
+    </mat-card-title>
+    <mat-card-content>
+        <table>
+            <tr>
+                <td>Book Title:</td>
+                <td><input (keyup)="onKeyBookTitle($event)"></td>
+            </tr>
+            <tr>
+                <td>Book Author:</td>
+                <td><input (keyup)="onKeyBookAuthor($event)"></td>
+            </tr>
+            <tr>
+                <td>ISBN-10:</td>
+                <td><input (keyup)="onKeyBookISBN10($event)"></td>
+            </tr>
+            <tr>
+                <td>ISBN-13:</td>
+                <td><input (keyup)="onKeyBookISBN13($event)"></td>
+            </tr>
+        </table>
+        <button mat-raised-button (click)="onSubmitAbstractBook()">Submit</button>
+    </mat-card-content>
+</mat-card>
